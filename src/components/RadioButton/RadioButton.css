@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-radio-button-label {
+    @apply flex flex-col-reverse justify-center items-center gap-0.5vw;
+  }
+
+  .custom-radio-input-green {
+    @apply h-1vw w-1vw border-gray-300 text-green-500 focus:ring-green-500;
+  }
+
+  .custom-radio-input-red {
+    @apply h-1vw w-1vw border-gray-300 text-red-500 focus:ring-red-500;
+  }
+
+  .custom-radio-button-title {
+    @apply text-1vw;
+  }
+}

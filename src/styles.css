@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input[type='radio'].form-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #d1d5db;
+    border-radius: 50%;
+    width: 1.25vw;
+    height: 1.25vw;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type='radio'].form-radio:checked {
+    background-color: transparent;
+    border-color: currentColor;
+    position: relative;
+  }
+
+  input[type='radio'].form-radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.75vw;
+    height: 0.75vw;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+}

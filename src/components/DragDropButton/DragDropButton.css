@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-drag-drop {
+    @apply w-9.5vw h-9.5vw flex items-center justify-center border-2 border-dashed rounded-lg cursor-pointer overflow-hidden transition-all;
+  }
+
+  .custom-image-preview {
+    @apply w-full h-full object-cover;
+  }
+
+  .custom-text-preview {
+    @apply text-center text-1vw;
+  }
+}

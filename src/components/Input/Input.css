@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-input-container {
+    @apply relative flex flex-col;
+  }
+
+  .custom-label {
+    @apply text-1vw;
+  }
+
+  .custom-input {
+    @apply w-12vw h-2.5vw text-center outline-none border border-gray-500 rounded-0.5vw;
+    font-size: 1.2vw;
+  }
+
+  .custom-error {
+    @apply absolute -bottom-1.5vw text-1vw text-red-500;
+  }
+}
