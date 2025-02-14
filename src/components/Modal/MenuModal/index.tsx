@@ -72,12 +72,14 @@ const MenuModal = () => {
             <button
               // onClick={() => setIsModalOpen(false)}
               className="custom-modal-button"
+              type="button"
             >
               Cancel
             </button>
             <button
               //  onClick={() => setIsModalOpen(false)}
               className="custom-modal-button"
+              type="submit"
             >
               Save
             </button>
