@@ -7,8 +7,11 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "baseUrl": "src",
+    "baseUrl": "./",
+    "paths": {
+      "main/modalTypes": ["../main-mf/@types/modalTypes.d.ts"],
+    }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "@types"],
   "exclude": ["node_modules"]
 }
