@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-select-container {
+    @apply relative flex flex-col;
+  }
+
+  .custom-label {
+    @apply text-1vw block text-sm font-medium text-gray-700;
+  }
+
+  .custom-select {
+    @apply h-2.5vw outline-none appearance-none border border-gray-500 bg-white rounded-0.5vw px-1vw;
+    font-size: 1.2vw;
+    padding-top: 0.4vw;
+  }
+
+  .custom-select-arrow-container {
+    @apply absolute w-1.5vw h-1.5vw flex items-center pointer-events-none;
+    top: 1.6vw;
+    right: 0.4vw;
+  }
+
+  .custom-select-arrow-icon {
+    @apply w-full h-full text-gray-500 transform transition-transform duration-300 ease-in-out;
+  }
+
+  .custom-option-container {
+    @apply absolute z-10 w-full bg-white border border-gray-500 rounded-b-0.5vw;
+    top: 3.4vw;
+  }
+
+  .custom-option {
+    @apply px-1vw py-0.5vw cursor-pointer hover:bg-indigo-500 hover:text-white transition;
+    font-size: 1.2vw;
+  }
+}
