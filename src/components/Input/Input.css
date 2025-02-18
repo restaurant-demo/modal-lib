@@ -17,6 +17,6 @@
   }
 
   .custom-error {
-    @apply absolute -bottom-1.5vw text-1vw text-red-500;
+    @apply absolute -bottom-1.5vw text-1vw text-red-500 whitespace-nowrap;
   }
 }
